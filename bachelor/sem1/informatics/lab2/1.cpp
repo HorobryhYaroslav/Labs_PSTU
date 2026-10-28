@@ -16,6 +16,7 @@ int fact(int a)
 
 int main() 
 {
+    setlocale(LC_ALL,".65001");
     float answer = 0;
     float k;
     for(int i = 1; i <= 10; i++)
@@ -23,5 +24,5 @@ int main()
         k = fact(i) / pow(i,sqrt(i));
         answer += k;
     }
-    cout << answer << endl;
+    cout << "Ответ:" << answer << endl;
 }
